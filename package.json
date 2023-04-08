@@ -1,0 +1,36 @@
+{
+  "name": "djinni",
+  "description": "djinni test",
+  "homepage": "http://myroslav-kolomiiets.github.io/djinni",
+  "version": "0.0.0",
+  "private": true,
+  "repository": "https://github.com/myroslav-kolomiiets/djinni",
+  "license": "MIT",
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "webpack serve",
+    "build": "webpack build --mode=production",
+    "test": "npm run build"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss-loader": "^7.1.0",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2",
+    "gh-pages": "^5.0.0"
+  }
+}
