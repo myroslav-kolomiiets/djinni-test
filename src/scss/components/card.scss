@@ -1,9 +1,14 @@
 .card {
   border: 1px solid #EBEBEB;
   border-radius: 8px;
-  max-width: 400px;
+  max-width: 415px;
   min-width: 300px;
   height: fit-content;
+
+  img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }
 
 .card-title {

@@ -67,9 +67,7 @@ const updateDOM = (images) => {
         "image-wrapper",
         "col",
         "d-flex",
-        "justify-content-lg-end",
-        "justify-content-md-center",
-        "justify-content-sm-center",
+        "justify-content-center",
     ];
     images.forEach((img) => {
         const imageContainer = document.createElement("div");
