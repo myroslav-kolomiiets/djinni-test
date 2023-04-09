@@ -1,0 +1,19 @@
+.btn-outline-primary {
+  font-weight: 700;
+  font-size: 16px;
+  color: #292929;
+  border-style: solid;
+  border-color: #EBEBEB;
+
+  &:focus-visible {
+    background-color: #292929;
+    border-color: #292929;
+    color: #FFFFFF;
+  }
+}
+
+.btn-outline-primary.active {
+  background-color: #292929;
+  border-color: #292929;
+  color: #FFFFFF;
+}

@@ -7,7 +7,11 @@ const imgContainer = document.getElementById("images-container");
 const itemsCounter = document.getElementById("items-counter");
 
 document.body.addEventListener('click', event => {
-    const { id } = event.target;
+    const { id, classList } = event.target;
+
+    if (!classList.contains('read-more-btn')) {
+        return;
+    }
 
     if (!id) {
         return;
@@ -42,7 +46,13 @@ const renderCard = (image) => {
                         aperiam molestiae quos incidunt dolore iure officia! Blanditiis sint delectus quam quae nulla.
                         </span>
                     </p>
-                    <button id="read-more-btn-${id}" class="btn read-more-btn" type="button">Show more...</button>
+                    <button
+                        id="read-more-btn-${id}"
+                        class="btn btn-link read-more-btn"
+                        type="button"
+                    >
+                        Show more...
+                    </button>
                     <div class="d-flex justify-content-start align-items-center p-3 border-top">
                         <button type="button" class="btn btn-primary px-3 py-2 me-3">Save to collection</button>
                         <button type="button" class="btn btn-outline-secondary px-3 py-2">Share</button>

@@ -1,0 +1,23 @@
+.dropdown-toggle:after {
+  border-bottom: 2px solid #666666;
+  border-right: 2px solid #666666;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg) translateY(-50%);
+  transform-origin: right;
+}
+
+.dropdown-toggle:hover:after {
+  border-bottom-color: #292929;
+  border-right-color: #292929;
+}
+
+.dropdown-toggle.show:after {
+  top: 42%;
+  transform: rotate(224deg) translateY(-50%);
+}

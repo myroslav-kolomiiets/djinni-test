@@ -1,0 +1,27 @@
+.nav-link.nav-link-secondary {
+  border-radius: 8px;
+  font-weight: 700;
+  color: #666666;
+
+  &.active {
+    background-color: #ED7135;
+    border-color: #ED7135;
+    color: #FFFFFF;
+
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+
+  &:active {
+    color: lighten(#666666, 20);
+  }
+
+  &:hover {
+    color: darken(#666666, 15);
+  }
+
+  &:focus {
+    color: lighten(#666666, 15);
+  }
+}
