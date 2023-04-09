@@ -5,7 +5,7 @@
 }
 
 .btn-check + .btn:hover {
-  color: #292929;
-  background-color: #ffffff;
+  color: #FFFFFF;
+  background-color: lighten(#292929, 5);
   border-color: #292929;
 }
