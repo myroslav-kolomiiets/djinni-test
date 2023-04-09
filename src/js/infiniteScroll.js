@@ -48,7 +48,7 @@ const renderCard = (image) => {
                     </p>
                     <button
                         id="read-more-btn-${id}"
-                        class="btn btn-link read-more-btn"
+                        class="btn btn-link read-more-btn px-4"
                         type="button"
                     >
                         Show more...
