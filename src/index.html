@@ -6,9 +6,12 @@
     <title>Test</title>
   </head>
   <body>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+  </symbol>
     <header class="border-bottom px-2 mb-5">
-<!--      <nav class="navbar navbar-expand-md fixed-top bg-white py-0">-->
-      <nav class="navbar navbar-expand-md bg-white py-2 p-md-0 p-lg-0">
+      <nav class="navbar navbar-expand-md py-2 p-md-0 p-lg-0">
         <div class="container">
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +24,7 @@
               <li class="nav-item"><a href="#" class="nav-link nav-link-primary ps-0 pe-4 py-4 link-body-emphasis">Podcasts</a></li>
             </ul>
 
-            <form class="col-12 col-xl-6 col-lg-5 col-md-4 justify-content-sm-center" role="search">
+            <form class="col-12 col-xl-6 col-lg-5 col-md-4 justify-content-sm-center ps-lg-2 ps-0" role="search">
               <div class="input-group">
             <span class="input-group-append">
               <button class="btn shadow-none ms-n5" type="button">
@@ -97,7 +100,7 @@
         <main class="col-md-8 col-lg-9 ms-sm-auto ps-md-5 pe-md-0 px-sm-0">
           <div class="row ps-md-5 pe-md-0">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ps-md-4 pe-md-0 px-5">
-              <h1 class="h2 px-2">All photos</h1>
+              <h1 class="h2 px-md-10 px-lg-2 px-xxl-3">All photos</h1>
               <div class="btn-toolbar mb-2 mb-md-0 px-md-3 px-sm-0">
                 <div class="btn-group" role="group" aria-label="Radio toggle button group">
                   <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -111,17 +114,17 @@
           </div>
           <div class="row px-5">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 px-4">
-              <p class="p px-2" id="items-counter"></p>
+              <p class="p px-md-10 px-lg-2 px-xxl-3" id="items-counter"></p>
             </div>
           </div>
 
-          <div class="album py-0">
-            <div class="container d-flex justify-content-end">
-              <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex justify-content-end" id="images-container"></div>
+          <div class="album py-0 ps-md-4">
+            <div class="container ps-lg-5 ps-0">
+              <div class="row row-cols-1 row-cols-lg-2 g-3" id="images-container"></div>
             </div>
             <div class="d-flex justify-content-center py-5">
               <div class="spinner-border" role="status">
-                <span id="more" class="visually-hidden">Loading...</span>
+                <span id="show-more-cards" class="visually-hidden">Loading...</span>
               </div>
             </div>
           </div>
