@@ -1,0 +1,11 @@
+.btn-check:checked + .btn {
+  background-color: #292929;
+  border-color: #292929;
+  color: #FFFFFF;
+}
+
+.btn-check + .btn:hover {
+  color: #292929;
+  background-color: #ffffff;
+  border-color: #292929;
+}

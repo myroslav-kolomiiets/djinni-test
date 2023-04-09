@@ -1,0 +1,14 @@
+.nav-item.active .nav-link-primary {
+  font-weight: 700;
+  color: #292929;
+  position: relative;
+}
+
+.nav-item.active a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #ED7135;
+  width: calc(100% - 1.5rem);
+}
