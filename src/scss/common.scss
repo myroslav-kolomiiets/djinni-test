@@ -4,6 +4,12 @@ body {
   font-family: 'Commissioner', sans-serif;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #292929;
+}
+
 main {
   min-height: 110vh;
 }
@@ -22,4 +28,10 @@ main {
 
 .ms-n5 {
   margin-right: -45px;
+}
+
+.items-counter {
+  font-weight: 700;
+  font-size: 14px;
+  color: #666666;
 }
