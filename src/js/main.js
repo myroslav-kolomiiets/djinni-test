@@ -24,4 +24,4 @@ const intersectionObserver = new IntersectionObserver(async (entries) => {
     await fetchImages();
 });
 
-intersectionObserver.observe(document.getElementById("more"));
+intersectionObserver.observe(document.getElementById("show-more-cards"));
