@@ -1,13 +1,13 @@
 import '../scss/styles.scss';
 
-import { Popover } from 'bootstrap';
-import { fetchImages, isFetching } from "./infiniteScroll";
+import {Popover} from 'bootstrap';
+import {fetchImages, isFetching} from "./infiniteScroll";
 
 
 document.querySelectorAll('[data-bs-toggle="popover"]')
-  .forEach(popover => {
-    new Popover(popover)
-  })
+    .forEach(popover => {
+        new Popover(popover)
+    })
 
 window.addEventListener("DOMContentLoaded", async (event) => {
     await fetchImages();

@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.nav-item.active a::before{
+.nav-item.active a::before {
   content: '';
   position: absolute;
   bottom: 0;

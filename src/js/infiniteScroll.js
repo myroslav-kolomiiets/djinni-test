@@ -6,10 +6,10 @@ let pagesAmount = 9;
 const imgContainer = document.getElementById("images-container");
 const itemsCounter = document.getElementById("items-counter");
 
-document.body.addEventListener('click', event => {
-    const { id, classList } = event.target;
+document.body.addEventListener("click", event => {
+    const {id, classList} = event.target;
 
-    if (!classList.contains('read-more-btn')) {
+    if (!classList.contains("read-more-btn")) {
         return;
     }
 
@@ -17,8 +17,9 @@ document.body.addEventListener('click', event => {
         return;
     }
 
-    const readMoreBtn = document.getElementById(`read-more-btn-${id[id.length-1]}`);
-    const text = document.getElementById(`text-${id[id.length-1]}`);
+    const readMoreBtn = document.getElementById(id);
+    const text = document.querySelector(`[data-read-more=${id}]`);
+
 
     if (text) {
         text.classList.toggle("show-more");
@@ -31,13 +32,13 @@ document.body.addEventListener('click', event => {
 });
 
 const renderCard = (image) => {
-    const { author, download_url, id } = image;
+    const {author, download_url, id} = image;
 
     return `<div class="card" id=${id}>
                 <img class="bd-placeholder-img card-img-top" src=${download_url} alt="image"/>
                 <div class="card-body p-0">
                     <h4 class="card-title px-4 pt-3 pb-0 display-7 m-0">Author ${author}</h4>
-                    <p class="card-text px-4 py-3 m-0" id="text-${id}">
+                    <p class="card-text px-4 py-3 m-0" data-read-more="read-more-${id}">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         <span class="dots"> ...</span>
                         <span class="moreText"> 
@@ -47,7 +48,7 @@ const renderCard = (image) => {
                         </span>
                     </p>
                     <button
-                        id="read-more-btn-${id}"
+                        id="read-more-${id}"
                         class="btn btn-link read-more-btn px-4"
                         type="button"
                     >
@@ -81,11 +82,10 @@ const updateDOM = (images) => {
 
 export const fetchImages = async () => {
     isFetching = true;
-    const response =
-        await fetch(`https://picsum.photos/v2/list?page=${currentPage}&limit=${pagesLimitForOneFetch}`);
+    const response = await fetch(`https://picsum.photos/v2/list?page=${currentPage}&limit=${pagesLimitForOneFetch}`);
     const images = await response.json();
     updateDOM(images);
     currentPage++;
-    pagesAmount+=pagesLimitForOneFetch;
+    pagesAmount += pagesLimitForOneFetch;
     isFetching = false;
 };
