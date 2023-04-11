@@ -1,57 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-body {
-  font-family: 'Commissioner', sans-serif;
+.container {
+  max-width: 1140px;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 40px;
-  color: #292929;
-}
+.nav-item.active .nav-item-link-wrapper {
+  width: fit-content;
 
-main {
-  min-height: 110vh;
-}
-
-.moreText {
-  display: none;
-}
-
-.card-text.show-more .moreText {
-  display: inline;
-}
-
-.card-text.show-more .dots {
-  display: none;
-}
-
-.ms-n5 {
-  margin-right: -45px;
-}
-
-.items-counter {
-  font-weight: 700;
-  font-size: 14px;
-  color: #666666;
-}
-
-.form-control-icon {
-  position: absolute;
-  z-index: 6;
-  display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #aaa;
-  left: 4px;
-}
-
-.dropdown-item {
-  &:active {
-    background-color: #e9ecef;
-    color: #000;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid $primary;
+    width: calc(100% - 1.5rem);
   }
 }
