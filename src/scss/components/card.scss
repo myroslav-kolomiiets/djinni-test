@@ -1,22 +1,9 @@
 .card {
-  border: 1px solid #EBEBEB;
-  border-radius: 8px;
-  max-width: 415px;
+  max-width: 356px;
   min-width: 300px;
   height: fit-content;
 
   img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    max-height: 200px;
   }
-}
-
-.card-title {
-  font-weight: 700;
-  color: #292929;
-}
-
-.card-text {
-  font-weight: 400;
-  color: #666666;
 }

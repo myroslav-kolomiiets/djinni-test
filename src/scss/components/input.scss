@@ -1,9 +1,7 @@
-header {
-  .form-control {
-    color: #666666;
-    background: #EEEEEE;
-    height: 40px;
-    border: none;
-    padding-left: 40px;
-  }
+.form-control-icon {
+  z-index: 6;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  left: 6px;
 }
